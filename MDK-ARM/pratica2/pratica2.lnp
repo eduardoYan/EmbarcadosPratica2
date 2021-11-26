@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"pratica2\startup_stm32f103xb.o"
+"pratica2\main.o"
+"pratica2\stm32f1xx_it.o"
+"pratica2\stm32f1xx_hal_msp.o"
+"pratica2\stm32f1xx_hal_gpio_ex.o"
+"pratica2\stm32f1xx_hal_tim.o"
+"pratica2\stm32f1xx_hal_tim_ex.o"
+"pratica2\stm32f1xx_hal.o"
+"pratica2\stm32f1xx_hal_rcc.o"
+"pratica2\stm32f1xx_hal_rcc_ex.o"
+"pratica2\stm32f1xx_hal_gpio.o"
+"pratica2\stm32f1xx_hal_dma.o"
+"pratica2\stm32f1xx_hal_cortex.o"
+"pratica2\stm32f1xx_hal_pwr.o"
+"pratica2\stm32f1xx_hal_flash.o"
+"pratica2\stm32f1xx_hal_flash_ex.o"
+"pratica2\stm32f1xx_hal_exti.o"
+"pratica2\system_stm32f1xx.o"
+--strict --scatter "pratica2\pratica2.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "pratica2.map" -o pratica2\pratica2.axf
